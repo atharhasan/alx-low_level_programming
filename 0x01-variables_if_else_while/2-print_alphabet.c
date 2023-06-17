@@ -12,7 +12,7 @@ int main(void)
 {
 	for (int i = 'A'; i <= 'Z'; i++)
 	{
-		char lower = tolower(x);
+		char lower = tolower(i);
 
 		putcher(lower);
 	}
