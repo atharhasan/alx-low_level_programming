@@ -10,11 +10,14 @@
 
 int main(void)
 {
-	for (int i = 'A'; i <= 'Z'; i++)
-	{
-		char lower = tolower(i);
+	char ch = 'a';
 
-		putcher(lower);
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
 	}
+	putchar('\n');
+
 	return (0);
 }
