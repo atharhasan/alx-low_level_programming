@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _abs - function
  *
@@ -12,7 +13,7 @@
 
 int _abs(int r)
 {
-	char n = abs(r);
+	int n = abs(r);
 
 	_putchar(n);
 	return (0);
