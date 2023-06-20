@@ -11,7 +11,7 @@
 
 void print_to_89(int n)
 {
-	while (n < 89)
+	while (n <= 89)
 	{
 		printf("%d, ", n);
 		n++;
