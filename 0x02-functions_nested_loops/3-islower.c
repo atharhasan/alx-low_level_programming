@@ -5,6 +5,8 @@
  *
  * Description: function that can check for lowercase character
  *
+ * @c: parameter is char that want to check
+ *
  * Return: 1 success 0 false
 */
 
