@@ -20,8 +20,12 @@ void times_table(void)
 			sp = num1 * num2;
 
 			if (sp <= 9)
+			{
 				_putchar(' ');
-			_putchar(sp + 48);
+			} else
+			{
+				_putchar((sp / 10) + 48);
+				_putchar((sp % 10) + 48);
 		}
 		_putchar('\n');
 	}
