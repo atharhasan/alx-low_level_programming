@@ -5,14 +5,14 @@
  *
  * Description: function that computes the absolute value of an integer.
  *
- * @r: parameter is char that want to check
+ * @int: parameter is char that want to check
  *
  * Return: 0 success
 */
 
-int _abs(int r)
+int _abs(int)
 {
-	int n = abs(r);
+	int n = abs(int);
 
 	_putchar(n);
 	return (0);
