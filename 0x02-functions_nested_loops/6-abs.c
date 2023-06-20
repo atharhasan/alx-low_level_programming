@@ -7,7 +7,7 @@
  *
  * @r: parameter is char that want to check
  *
- * Return: 1 success
+ * Return: 0 success
 */
 
 int _abs(int r)
@@ -15,4 +15,5 @@ int _abs(int r)
 	int n = abs(r);
 
 	_putchar(n);
+	return (0);
 }
