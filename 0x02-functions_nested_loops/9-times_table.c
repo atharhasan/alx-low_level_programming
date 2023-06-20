@@ -21,7 +21,7 @@ void times_table(void)
 
 			if (sp <= 9)
 				_putchar(' ');
-			_putchar(sp);
+			_putchar(sp + 48);
 		}
 		_putchar('\n');
 	}
