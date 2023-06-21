@@ -18,9 +18,7 @@ void print_to_98(int n)
 		i = n;
 		while (i >= 98)
 		{
-			_putchar(i + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", i);
 			i--;
 		}
 	} else
@@ -29,11 +27,9 @@ void print_to_98(int n)
 
 		while (i <= 98)
 		{
-			_putchar(i + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", i);
 			i++;
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
