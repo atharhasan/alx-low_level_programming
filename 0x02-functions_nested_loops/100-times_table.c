@@ -34,7 +34,8 @@ void print_times_table(int n)
 			} else if (sp <= 99 && sp >= 10)
 				_putchar((sp / 10) + 48);
 			_putchar((sp % 10) + 48);
-		}
+			}
 		_putchar('\n');
+		}
 	}
 }
