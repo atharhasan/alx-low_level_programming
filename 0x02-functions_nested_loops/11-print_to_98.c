@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_to_89 - function
+ * print_to_98 - function
  *
  * Description: function that can print numbers to 89
  *
  * @n: int param
 */
 
-void print_to_89(int n)
+void print_to_98(int n)
 {
 	int i;
 
