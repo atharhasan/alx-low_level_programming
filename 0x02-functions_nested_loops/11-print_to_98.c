@@ -11,8 +11,6 @@
 
 void print_to_89(int n)
 {
-	int i;
-
 	if (n > 98)
 	{
 		while (n > 98)
@@ -28,5 +26,5 @@ void print_to_89(int n)
 			n++;
 		}
 	}
-	pritnf("\n");
+	printf("\n");
 }
