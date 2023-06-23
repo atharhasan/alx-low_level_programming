@@ -5,9 +5,11 @@
  * main - entry point
  *
  * Description: program can print numbers from 1 to 100
+ *
+ * Return: 0 always
 */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -25,4 +27,5 @@ void main(void)
 		}
 		printf("%d ", i);
 	}
+	return (0);
 }
