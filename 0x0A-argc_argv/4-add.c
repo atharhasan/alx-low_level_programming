@@ -13,7 +13,7 @@
  * Return: 0 always
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	int i, sum = 0;
 
