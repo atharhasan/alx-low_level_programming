@@ -13,7 +13,7 @@
  * Return: 0 always
 */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i]) == 1)
+			if (isdigit(argv[i]) >= 1)
 			{
 				sum += atoi(argv[i]);
 				printf("%d\n", sum);
