@@ -14,6 +14,10 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	int i;
+
+	(void)argv;
+	i = atoi(argc);
+	printf("%d\n", i);
 	return (0);
 }
