@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - function
@@ -15,10 +16,8 @@ char *_strdup(char *str)
 {
 	char *c;
 
-	if (str == 0)
-	{
-		return (1);
-	}
+	if (str == NULL)
+		return (NULL);
 	c = strdup(str);
 	return (c);
 }
