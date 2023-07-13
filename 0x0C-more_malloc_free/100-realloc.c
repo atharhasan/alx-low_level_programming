@@ -39,7 +39,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		k = realloc(ptr, new_size);
 		if (k == NULL)
 			return (NULL);
-		free(ptr);
 	}
 	return (k);
+	free(ptr);
 }
