@@ -14,11 +14,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int x;
+	int *x = malloc(b);
 
-	x = malloc(sizeof(x) * b);
 	if (x == NULL)
 	{
-		printf('98');
+		exit(98);
 	}
+	return (x);
 }
