@@ -1,4 +1,7 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <string.h>
+#includ <stdlib.h>
 
 /**
  * main - entry point function
