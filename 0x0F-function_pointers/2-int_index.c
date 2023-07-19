@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <string.h>
 
 /**
  * int_index - function
