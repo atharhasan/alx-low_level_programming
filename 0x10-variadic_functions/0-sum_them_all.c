@@ -13,10 +13,9 @@ int sum_them_all(const unsigned int n, ...)
 	va_list li;
 	int i, sum = 0;
 
-	va_start(li, n);
-
 	if (n == 0)
 		return (0);
+	va_start(li, n);
 
 	for (i = 0; i < n; i++)
 		sum += va_arg(li, unsigned int);
