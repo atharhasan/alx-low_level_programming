@@ -16,8 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	if (!n)
 	{
-		printf("nil");
-		return;
+		printf("nil\n");
 	}
 
 	va_start(li, n);
