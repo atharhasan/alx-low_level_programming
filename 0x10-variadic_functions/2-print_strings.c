@@ -6,6 +6,7 @@
  *
  * @separator: char input
  * @n: unsigned num
+ * @...: the strings that will printed
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
