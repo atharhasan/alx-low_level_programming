@@ -1,4 +1,4 @@
-i#include "lists.h"
+#include "lists.h"
 
 /**
  * add_node - function that can add new node
