@@ -3,6 +3,8 @@
 /**
  * pop_listin - function that can add new node
  * @head: pointer from struct
+ *
+ * Return: the value of element
 */
 
 int pop_listint(listint_t **head)
@@ -17,5 +19,6 @@ int pop_listint(listint_t **head)
 	n = (*head)->n;
 	free(*head);
 	*head = node;
+
 	return (n);
 }
