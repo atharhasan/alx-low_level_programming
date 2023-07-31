@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * pop_listin - function that can add new node
+ * pop_listint - function that can add new node
  * @head: pointer from struct
  *
  * Return: the value of element
