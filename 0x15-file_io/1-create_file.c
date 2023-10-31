@@ -3,7 +3,7 @@
 /**
  * create_file - that creates a file
  * @filename: the postion that will returned value
- * @letters: the value
+ * @text_content: the value
  *
  * Return: 0
 */
