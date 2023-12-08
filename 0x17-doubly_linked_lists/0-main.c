@@ -18,6 +18,22 @@ size_t print_dlistint(const dlistint_t *h)
 	return (num);
 }
 
+int sum_dlistint(dlistint_t *head)
+{
+	dlistint_t *ptr;
+	int sum = 0;
+
+	if (head == NULL)
+		return (0);
+	ptr = head;
+	while (ptr != NULL )
+	{
+		sum += ptr->n;
+		ptr = ptr->next;
+	}
+	return (sum);
+}
+
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *temp, *ptr;
@@ -56,43 +72,23 @@ void free_dlistint(dlistint_t *head)
 	}
 }
 
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
-{
-	dlistint_t *ptr = head;
-
-	if (head == NULL)
-		return (NULL);
-	while (ptr != NULL && index > 0)
-	{
-		ptr = ptr->next;
-		index--;
-	}
-	return (ptr);
-}
-
-/**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
- */
 int main(void)
 {
-	dlistint_t *head;
-	dlistint_t *node;
+    dlistint_t *head;
+    int sum;
 
-	head = NULL;
-	add_dnodeint_end(&head, 0);
-	add_dnodeint_end(&head, 1);
-	add_dnodeint_end(&head, 2);
-	add_dnodeint_end(&head, 3);
-	add_dnodeint_end(&head, 4);
-	add_dnodeint_end(&head, 98);
-	add_dnodeint_end(&head, 402);
-	add_dnodeint_end(&head, 1024);
-	print_dlistint(head);
-	node = get_dnodeint_at_index(head, 5);
-	printf("%d\n", node->n);
-	free_dlistint(head);
-	head = NULL;
-	return (EXIT_SUCCESS);
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    sum = sum_dlistint(head);
+    printf("sum = %d\n", sum);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
 }
