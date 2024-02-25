@@ -6,4 +6,4 @@ BIN := $(SRC:%.c=%)
 all: ${BIN}
 %: %.o
 	@echo "Check.."
-	${CC} ${SRC} $&lt; -o $@
+	${CC} ${BIN} -o $@
