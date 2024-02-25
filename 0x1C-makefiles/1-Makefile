@@ -4,7 +4,5 @@ CC := ${CC}
 SRC := $(wildcard *.c)
 BIN := $(SRC:%.c=%)
 all: ${BIN}
-school: school.c
-main: main.c
 	@echo "Check.."
 	${CC} ${SRC} $< -o school
