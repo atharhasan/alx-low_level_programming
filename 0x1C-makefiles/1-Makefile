@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean
 CC := gcc
 CC := ${CC}
 SRC := $(wildcard *.c)
@@ -7,3 +7,5 @@ all: ${BIN}
 %: %.c
 	@echo "Check.."
 	${CC} $< -o $@
+clean:
+	rm -f ${BIN}
