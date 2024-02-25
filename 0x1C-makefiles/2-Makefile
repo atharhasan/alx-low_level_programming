@@ -1,7 +1,7 @@
 .PHONY: all
 CC = gcc
 SRC = school.c main.c
-OBJ = $(SRC:%.c=%)
+OBJ = $(SRC:%.c=%.o)
 NAME = school
 all: ${OBJ}
 	@echo "7spy Allah"
