@@ -1,2 +1,2 @@
 0-Makefile:
-        @echo "gcc main.c school.c -o school"
+    @echo "gcc main.c school.c -o school"
