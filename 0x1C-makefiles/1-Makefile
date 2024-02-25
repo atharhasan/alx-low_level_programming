@@ -4,6 +4,6 @@ CC := ${CC}
 SRC := $(wildcard *.c)
 BIN := $(SRC:%.c=%)
 all: ${BIN}
-%: %.o
+%: %.c
 	@echo "Check.."
-	${CC} ${BIN} -o $@
+	${CC} $< -o $@
