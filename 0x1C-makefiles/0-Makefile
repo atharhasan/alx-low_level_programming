@@ -1,2 +1,4 @@
-.PHONY: all school
-all: school
+.PHONY: all school main
+all: school main
+school: school.c
+main: main.c
