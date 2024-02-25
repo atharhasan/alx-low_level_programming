@@ -1,8 +1,9 @@
+.PHONY: all
 CC := gcc
 CC := ${CC}
 SRC := $(wildcard *.c)
 BIN := $(SRC:%.c=%)
-all: ${BINS}
+all: ${BIN}
 school: school.c
 main: main.c
 	@echo "Check.."
