@@ -1,4 +1,2 @@
-.PHONY: all school main
-all: school main
-school: school.c
-main: main.c
+0-Makefile:
+        @echo "gcc main.c school.c -o school"
