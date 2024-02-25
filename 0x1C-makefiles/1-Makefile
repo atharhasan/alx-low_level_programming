@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all ${BIN}
 CC := gcc
 CC := ${CC}
 SRC := $(wildcard *.c)
